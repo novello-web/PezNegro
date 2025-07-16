@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pez Negro – Contacto</title>
+    <link rel="stylesheet" href="formulario.css" />
+        <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+  <img src="logo.png" class="logo" alt="Logo Pez Negro" />
+  <a href="index.html" class="Volver">Volver</a>
+</header>
+
+<div class="form-wrapper">
+      <h1 class="title">Formulario de Contacto</h1>
+    <form id="contactForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" required placeholder="Email" />
+
+        <label for="name">Nombre</label>
+        <input type="text" id="name" required placeholder="Nombre" />
+
+        <label for="lastname">Apellido</label>
+        <input type="text" id="lastname" required placeholder="Apellido" />
+
+        <label for="numberphone">Número de teléfono</label>
+        <input type="tel" id="numberphone" required placeholder="+54 9 11 1234 5678" />
+
+        <label for="service">Servicio que necesitas</label>
+        <select id="service" required>
+            <option value="" disabled selected>Selecciona un servicio</option>
+            <option value="Serigrafía">Serigrafía</option>
+            <option value="Sublimación">Sublimación</option>
+            <option value="Bordados">Bordados</option>
+            <option value="Vinilo">Vinilo</option>
+            <option value="DTF">DTF</option>
+        </select>
+
+        <button class="Enviar" type="submit">Enviar por WhatsApp</button>
+    </form>
+</div>
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-social">
+      <a href="https://www.instagram.com/peznegroventas/" target="_blank" class="social-link">
+        <img src="ig.png" alt="Instagram" class="social-icon">
+        <span>Instagram</span>
+      </a>
+            <a href="https://www.facebook.com/PezNegroRemeras/?ref=bookmarks" target="_blank" class="social-link">
+
+        <img src="facebook.png" alt="Logo facebook" class="social-icon">
+        <span>Facebook</span>
+      </a>
+      <a href="historia.html" class="social-link" target="_blank">📖 Sobre Nosotros</a>
+    </div>
+      <p class="ubicacion-footer">📍 Anisacate, Córdoba, Argentina</p>
+    <p class="footer-credit">© 2025 Pez Negro. Diseño textil personalizado desde Córdoba.</p>
+  </div>
+</footer>
+
+
+    <script src="formulario.js"></script>
+</body>
+</html>

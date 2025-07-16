@@ -1,0 +1,406 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #222222;
+  font-family: 'Inter', sans-serif;
+  background-size: 30px 30px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2, h3{
+  color: #fff;
+
+}
+
+p{
+  color: #c12828;
+  font-weight: bold;
+  margin-left: 60px;
+  font-size: 1.2rem;
+  width: 75%;
+  line-height: 2rem;
+text-shadow: 0 0 2px #000;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 0 10px  #444)
+
+}
+
+.header {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#Inicio{
+    scroll-margin-top: 200px; 
+}
+
+#Servicios {
+  scroll-margin-top: 200px; 
+}
+
+#¿Como{
+    scroll-margin-top: 200px; 
+}
+
+#portafolio{
+  scroll-margin-top: 120px;
+}
+
+#Testimonio{
+  scroll-margin-top: 220px;
+}
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #111;
+  z-index: 1000;
+}
+
+
+  .navrapido a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    position: relative;
+    margin: 10px;
+    font-weight: bold;
+  }
+
+  .navrapido a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: -10px;
+    left: 0;
+    background-color: #c12828;
+    transition: width 0.3s ease;
+  }
+
+  .navrapido a:hover::after {
+    width: 100%;
+  }
+
+  .navrapido a:hover {
+    color: #c12828;
+  }
+
+
+.navrapido{
+  margin-right: 30px;
+}
+
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.p-primero{
+  color: #ddd;
+  width: auto;
+  margin-right: 50px;
+  text-shadow: none;
+}
+
+.btn-cta {
+  background: #c12828;
+  padding: 1.7rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px; 
+  display: inline-block;
+  margin-top: 80px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+box-shadow: 0 0px 10px rgba(0,0,0,0.8);
+font-size: 1.2rem;
+}
+
+.btn-cta:hover {
+  background-color: #a41f1f;
+}
+
+.servicio{
+  margin-top: 6rem;
+}
+
+  h2{
+  text-align: center;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+    text-shadow: 0 0 15px  #666;
+}
+
+h3{
+  margin-left: 30px;
+}
+
+
+.portfolio-section {
+  text-align: center;
+  padding: 4rem 1rem;
+
+}
+
+
+
+.subtitulo {
+  margin-bottom: 2rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item {
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+box-shadow: 0 0px 10px rgba(0,0,0,0.8);
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.item:hover img {
+  transform: scale(1.03);
+}
+
+
+.comofuncion{
+    text-align: center;
+  list-style-position: inside;
+  margin: 100px;
+}
+
+.Como{
+  margin-bottom: 20px;
+}
+
+li{
+  color: #c12828;
+  font-weight: bold;
+  line-height: 3rem;
+  font-size: 1.2rem;
+text-shadow: 0 0 2px #000;
+}
+
+
+.testimonio{
+  text-align: center;
+  margin-bottom: 200px;
+  width: auto;
+  margin-right: 50px;
+}
+
+
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  margin-top: 5rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #aaa;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.ubicacion-footer {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: auto;
+  margin-right: 50px;
+  text-shadow: none;
+}
+
+
+.footer-credit {
+  color: #999;
+  font-size: 0.8rem;
+  width: auto;
+  margin-right: 50px;
+  text-shadow: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #111;
+    padding: 0.2rem;
+  }
+  
+  .menu-toggle {
+    display: block;
+    margin-left: 150px;
+  }
+
+  .logo {
+    width: 50px;
+    margin-bottom: -0.5rem;
+  }
+
+ .navrapido {
+  position: fixed;
+  top: 0;
+  right: -100%; /* empieza oculto */
+  width: 60%;
+  height: 100vh;
+  background-color: #111;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+  display: flex;
+  }
+
+  .navrapido a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.3rem 0;
+    transition: color 0.3s;
+    position: relative;
+    margin: 1rem 0;
+  }
+
+  .navrapido a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    background-color: #c12828;
+    transition: width 0.3s ease;
+  }
+
+  .navrapido a:hover::after {
+    width: 100%;
+  }
+
+  .navrapido a:hover {
+    color: #c12828;
+  }
+
+  .navrapido.show {
+    display: flex;
+    right: -30px; /* entra desde la derecha */
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .p-primero,
+  .testimonio,
+  .ubicacion-footer,
+  .footer-credit,
+  p {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .comofuncion {
+    margin: 2rem 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .logo {
+    width: 140px;
+  }
+#Servicios {
+  scroll-margin-top: 180px; 
+}
+
+#¿Como{
+    scroll-margin-top: 180px; 
+}
+
+#portafolio{
+  scroll-margin-top: 100px;
+}
+
+#Testimonio{
+  scroll-margin-top: 160px;
+}
+
+}
+
